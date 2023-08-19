@@ -11,14 +11,14 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001948876960"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "乛Quran")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ǫᴜʀᴀɴ ʟɪᴠᴇ")
 OWNER_ID = list(map(int, getenv("OWNER_ID", "5422153027").split()))
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 BOT_ID = getenv("BOT_ID")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/nssaralkindi/kindilive",
+    "https://github.com/Alinssar/IlHll",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
