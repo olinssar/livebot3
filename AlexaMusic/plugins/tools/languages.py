@@ -1,12 +1,13 @@
+
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string
-from ShizukaXMusic import app
-from ShizukaXMusic.utils.database import get_lang, set_lang
-from ShizukaXMusic.utils.decorators import ActualAdminCB, language, languageCB
+from AlexaMusic import app
+from AlexaMusic.utils.database import get_lang, set_lang
+from AlexaMusic.utils.decorators import ActualAdminCB, language, languageCB
 
 # Languages Available
 
@@ -19,14 +20,8 @@ def lanuages_keyboard(_):
             callback_data=f"languages:en",
         ),
         InlineKeyboardButton(
-            text="• ᴇɴɢʟɪsʜ 🇾🇪",
+             text="• ᴇɴɢʟɪsʜ 🇾🇪",
             callback_data=f"languages:gu",
-        ),
-    )
-   keyboard.row(
-        InlineKeyboardButton(
-            text="",
-            callback_data=f"languages:cheems",
         ),
     )
     keyboard.row(
