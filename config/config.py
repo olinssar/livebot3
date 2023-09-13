@@ -18,7 +18,7 @@ BOT_ID = getenv("BOT_ID")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Alinssar/IlHll",
+    "https://github.com/olinssar/IlHll",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
