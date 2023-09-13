@@ -1,23 +1,12 @@
-#
-# Copyright (C) 2021-2022 by Alexa_Help@Github, < https://github.com/Jankarikiduniya >.
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-
-# Kanged By © @Dr_Asad_Ali
-# Rocks © @Shayri_Music_Lovers
-# Owner Asad Ali
-# Harshit Sharma
-# All rights reserved. © Alisha © Alexa © Yukki
-
-
 from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
 from config import BANNED_USERS
 from strings import get_command, get_string
-from AlexaMusic import app
-from AlexaMusic.utils.database import get_lang, set_lang
-from AlexaMusic.utils.decorators import ActualAdminCB, language, languageCB
+from ShizukaXMusic import app
+from ShizukaXMusic.utils.database import get_lang, set_lang
+from ShizukaXMusic.utils.decorators import ActualAdminCB, language, languageCB
 
 # Languages Available
 
@@ -26,37 +15,17 @@ def lanuages_keyboard(_):
     keyboard = InlineKeyboard(row_width=2)
     keyboard.row(
         InlineKeyboardButton(
-            text="🇦🇺 ᴇɴɢʟɪsʜ 🇦🇺",
+            text="• العربية 🇾🇪",
             callback_data=f"languages:en",
         ),
         InlineKeyboardButton(
-            text="🇮🇳 हिन्दी 🇮🇳",
-            callback_data=f"languages:hi",
-        ),
-    )
-    keyboard.row(
-        InlineKeyboardButton(
-            text="🇱🇰 සිංහල 🇱🇰",
-            callback_data=f"languages:si",
-        ),
-        InlineKeyboardButton(
-            text="🇦🇿 Azərbaycan 🇦🇿",
-            callback_data=f"languages:az",
-        ),
-    )
-    keyboard.row(
-        InlineKeyboardButton(
-            text="🇮🇳 ગુજરાતી 🇮🇳",
+            text="• ᴇɴɢʟɪsʜ 🇾🇪",
             callback_data=f"languages:gu",
         ),
-        InlineKeyboardButton(
-            text="🇹🇷 Türkiye Türkçesi 🇹🇷",
-            callback_data=f"languages:tr",
-        ),
     )
-    keyboard.row(
+   keyboard.row(
         InlineKeyboardButton(
-            text="🐕 ᴄʜᴇᴇᴍs 🐕",
+            text="",
             callback_data=f"languages:cheems",
         ),
     )
