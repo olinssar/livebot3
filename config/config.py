@@ -30,7 +30,7 @@ UPSTREAM_REPO = getenv(
     "https://github.com/olinssar/livebot3",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/olinssar/livebot3")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://t.me/NNINB")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NNINB")
