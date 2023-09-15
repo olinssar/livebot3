@@ -18,7 +18,7 @@ BOT_ID = getenv("BOT_ID")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/olinssar/IlHll",
+    "https://github.com/olinssar/livebot3",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
@@ -61,8 +61,8 @@ clean = {}
 
 autoclean = []
 
-START_IMG_URL = getenv("START_IMG_URL","https://kindidev.com/live/Channel%20design%20.png")
-PING_IMG_URL = getenv("PING_IMG_URL","https://kindidev.com/live/Channel%20design%20.png",)
+START_IMG_URL = getenv("START_IMG_URL","https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg")
+PING_IMG_URL = getenv("PING_IMG_URL","https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg",)
 
 PLAYLIST_IMG_URL = "https://te.legra.ph/file/6054be6dbfc0f654db62b.jpg"
 
@@ -111,9 +111,9 @@ if UPSTREAM_REPO:
 if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
-            PING_IMG_URL = "https://kindidev.com/live/Channel%20design%20.png"
+            PING_IMG_URL = "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg"
 
 if START_IMG_URL:
     if START_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", START_IMG_URL):
-            START_IMG_URL = "https://kindidev.com/live/Channel%20design%20.png"
+            START_IMG_URL = "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg"
