@@ -1,7 +1,7 @@
 {
-    "name": "Alexa Music",
-    "description": "Deploy Alexa music on railwey make sure to star the projecte.",
-    "logo": "https://telegra.ph/file/ba967503682a55beaedd3.png",
+    "name": "quran live",
+    "description": "Deploy kindi music on railwey make sure to star the projecte.",
+    "logo": "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg",
     "keywords": [
     "python3",
     "telegram",
@@ -30,7 +30,7 @@
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5303133436",
+        "value": "5422153027",
         "required": true
       },        
       "MONGO_DB_URI": {
