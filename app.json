@@ -1,14 +1,14 @@
 {
     "name": "❤️⁪⁬ǫᴜʀᴀɴ ʟɪᴠᴇ❤️",
     "description": "kindi Is A Telegram Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls.",
-    "logo": "https://kindidev.com/live/photo_2023-09-10_00-59-15.jpg",
+    "logo": "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "Alexa",
-    "alexamusic",
-    "alexamusicbot",
+    "Shizuka",
+    "telegram-music-bot",
+    "telegram-bot",
     "pyrogram"
     ],
     "stack": "container",
@@ -23,42 +23,37 @@
         "value": "",
         "required": true
       },
+      "AUTO_LEAVING_ASSISTANT": {
+        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "value": "True",
+        "required": true
+      },
       "BOT_TOKEN": {
         "description": "A Bot's token from Botfather",
         "value": "",
         "required": true
       },
+      "MONGO_DB_URI": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com . You can leave it blank if you want , bot will use Ramdi's database for you.",
+        "value": "",
+        "required": true
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "A name for your Music Bot. You can use special characters bot ko jhaat farak ni padega",
+        "value": "⁪⁬",
+        "required": true
+      },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5303133436",
-        "required": true
-      },        
-      "MONGO_DB_URI": {
-        "description": "Mongo DB URL",
-        "value": "",
+        "value": "5422153027",
         "required": true
       },
       "STRING_SESSION": {
-        "description": "A Pyrogram Session Get It From  Here @Session_Generator_Robot.",
+        "description": "A Pyrogram String Session. One Assistant is Compulsory.",
         "value": "",
         "required": true
       },
-      "HEROKU_API_KEY": {
-        "description": "Your Heroku account's API key",
-        "value": "",
-        "required": false
-      },
-      "HEROKU_APP_NAME": {
-        "description": "Your heroku app name",
-        "value": "",
-        "required": false
-      },
-      "LOG_GROUP_ID": {
-        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Use only Group. Please don't use Channel ID.",
-        "value": "",
-        "required": true
-      }
-"SUPPORT_GROUP": {
+      "SUPPORT_GROUP": {
         "description": "Your Support Group link ",
         "value": "https://t.me/NKINB",
         "required": false
@@ -70,15 +65,30 @@
       },
       "PING_IMG_URL": {
         "description": "The pic which will be shown when you give the /ping cmd to the bot.",
-        "value": "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg",
+        "value": "",
         "required": false
       },
       "START_IMG_URL": {
         "description": "The pic which will be shown when you /start the bot in private.",
-        "value": "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg",
+        "value": "",
         "required": false
       },
- "UPSTREAM_REPO": {
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "Your heroku app/bot's name",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "value": "",
+        "required": true
+      },
+          "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
         "value": "https://github.com/olinssar/livebot3",
         "required": true
@@ -100,5 +110,11 @@
               "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
       ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "Eco"
+          }
+      },
       "stack": "container"
   }
