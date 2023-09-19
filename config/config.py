@@ -4,21 +4,19 @@ from os import getenv
 from dotenv import load_dotenv
 from pyrogram import filters
 load_dotenv()
-API_ID = int(getenv("API_ID",""))
+API_ID = int(getenv("API_ID", ""))
 API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", "900"))
 SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001948876960"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "القران الكريم")
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ǫᴜʀᴀɴ ʟɪᴠᴇ")
 OWNER_ID = list(map(int, getenv("OWNER_ID", "5422153027").split()))
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 BOT_ID = getenv("BOT_ID")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
-UPSTREAM_REPO = getenv(
-    "UPSTREAM_REPO",
-    "https://github.com/olinssar/livebot3",
+UPSTREAM_REPO = getenv("UPSTREAM_REPO","https://github.com/olinssar/livebot3",)
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/NNINB")
@@ -46,7 +44,6 @@ STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
-
 BANNED_USERS = filters.user()
 YTDOWNLOADER = 1
 LOG = 2
@@ -58,14 +55,12 @@ userstats = {}
 clean = {}
 autoclean = []
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg"
+"START_IMG_URL","https://kindidev.com/live/photo_%D8%A7%D8%B5%D9%81%D8%B1.jpg"
 )
-
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
     "assets/Ping.jpeg",
 )
-
 PLAYLIST_IMG_URL = getenv(
     "PLAYLIST_IMG_URL",
     "assets/Playlist.jpeg",
@@ -125,8 +120,6 @@ SPOTIFY_PLAYLIST_IMG_URL = getenv(
 def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
-
-
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
 SONG_DOWNLOAD_DURATION_LIMIT = int(time_to_seconds(f"{SONG_DOWNLOAD_DURATION}:00"))
 
