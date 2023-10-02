@@ -9,9 +9,9 @@ STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["تشغيل","play", "fuck", "vplay", "فتح", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["تشغيل م","play", "fuck", "vplay", "تشغيل ق", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
 PLAYMODE_COMMAND : ["playmode"]
-CHANNELPLAY_COMMAND : ["ربط","channelplay"]
+CHANNELPLAY_COMMAND : ["ربط","دمج","channelplay"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
 
 #Playlists Command
@@ -29,16 +29,16 @@ LYRICS_COMMAND : ["lyrics"]
 AUTH_COMMAND : ["مصادفة","auth"]
 UNAUTH_COMMAND : ["الغاء المصادفة","unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["مؤقت","pause", "cpause"]
-RESUME_COMMAND : ["استئناف","resume", "cresume"]
-MUTE_COMMAND : ["كتم","mute", "cmute"]
+PAUSE_COMMAND : ["ايقاف م","pause","ايقاف ق", "cpause"]
+RESUME_COMMAND : ["استئناف م","resume","استئناف ق", "cresume"]
+MUTE_COMMAND : ["كتم م","mute","كتم ق", "cmute"]
 UNMUTE_COMMAND : ["الغاء الكتم","unmute", "cunmute"]
-STOP_COMMAND : ["ايقاف","stop", "end", "cstop", "cend"]
+STOP_COMMAND : ["انهاء م","stop", "end", "انهاء ق","cstop", "cend"]
 SKIP_COMMAND : ["تخطي","skip", "cskip"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["تكرار","loop", "cloop"]
+LOOP_COMMAND : ["اعادة م","loop", "اعادة ق"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
-RESTART_COMMAND : ["اعادة","reboot"]
+RESTART_COMMAND : ["استعادة","reboot"]
 
 # Sudo Users Commaands
 
