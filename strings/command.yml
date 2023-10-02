@@ -1,17 +1,17 @@
 # Bot Commands
-PING_COMMAND : ["سيرفر","ping"]
-START_COMMAND : ["بوت","start"]
-HELP_COMMAND : ["مساعدة","help"]
-SETTINGS_COMMAND : ["اعدادات","settings", "setting"]
+PING_COMMAND : ["ping", "alive"]
+START_COMMAND : ["start"]
+HELP_COMMAND : ["help"]
+SETTINGS_COMMAND : ["settings", "setting"]
 RELOAD_COMMAND : ["admincache", "reload"]
-GSTATS_COMMAND : ["الاحصائيات","gstats"]
+GSTATS_COMMAND : ["gstats"]
 STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-PLAY_COMMAND : ["تشغيل م","play", "fuck", "vplay", "تشغيل ق", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
+PLAY_COMMAND : ["play", "fuck", "تشغيل", "cplay", "فتح", "playforce", "vplayforce", "cplayforce", "cvplayforce"]
 PLAYMODE_COMMAND : ["playmode"]
-CHANNELPLAY_COMMAND : ["ربط","دمج","channelplay"]
+CHANNELPLAY_COMMAND : ["channelplay"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
 
 #Playlists Command
@@ -21,24 +21,24 @@ DELETEPLAYLIST_COMMAND : ["deleteplaylist"]
 
 # Tools
 QUEUE_COMMAND : ["queue","cqueue", "player", "cplayer", "playing", "cplaying"]
-SONG_COMMAND : ["تنزيل","song", "video", "vsong"]
+SONG_COMMAND : ["song", "video", "vsong"]
 LYRICS_COMMAND : ["lyrics"]
 
 
 # Admin Commands
-AUTH_COMMAND : ["مصادفة","auth"]
-UNAUTH_COMMAND : ["الغاء المصادفة","unauth"]
+AUTH_COMMAND : ["auth"]
+UNAUTH_COMMAND : ["unauth"]
 AUTHUSERS_COMMAND : ["authusers"]
-PAUSE_COMMAND : ["ايقاف م","pause","ايقاف ق", "cpause"]
-RESUME_COMMAND : ["استئناف م","resume","استئناف ق", "cresume"]
-MUTE_COMMAND : ["كتم م","mute","كتم ق", "cmute"]
-UNMUTE_COMMAND : ["الغاء الكتم","unmute", "cunmute"]
-STOP_COMMAND : ["انهاء","end","انهاء ق", "cend"]
-SKIP_COMMAND : ["تخطي","skip", "cskip"]
+PAUSE_COMMAND : ["pause", "cpause"]
+RESUME_COMMAND : ["resume", "cresume"]
+MUTE_COMMAND : ["mute", "cmute"]
+UNMUTE_COMMAND : ["unmute", "cunmute"]
+STOP_COMMAND : ["stop", "end", "cstop", "cend"]
+SKIP_COMMAND : ["skip", "cskip"]
 SHUFFLE_COMMAND : ["shuffle", "cshuffle"]
-LOOP_COMMAND : ["اعادة م","loop", "اعادة ق"]
+LOOP_COMMAND : ["loop", "cloop"]
 SEEK_COMMAND : ["seek", "cseek", "seekback", "cseekback"]
-RESTART_COMMAND : ["استعادة","reboot"]
+RESTART_COMMAND : ["reboot"]
 
 # Sudo Users Commaands
 
