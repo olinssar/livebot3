@@ -9,8 +9,7 @@ STATS_COMMAND : ["stats"]
 LANGUAGE_COMMAND : ["lang", "language", "langs"]
 
 # Play Commands
-فتح = ("/cplay","")
-PLAY_COMMAND : ["تشغيل","/تشغيل","play", "fuck", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"."/play","/fuck", "/vplay", "/cplay", "/cvplay", "/playforce", "/vplayforce", "/cplayforce", "/cvplayforce","{فتح}"]
+PLAY_COMMAND : ["تشغيل","/تشغيل","play", "fuck", "vplay", "cplay", "cvplay", "playforce", "vplayforce", "cplayforce", "cvplayforce"."/play","/fuck", "/vplay", "/cplay", "/cvplay", "/playforce", "/vplayforce", "/cplayforce", "/cvplayforce"]
 PLAYMODE_COMMAND : ["playmode","الوضع"]
 CHANNELPLAY_COMMAND : ["ربط","channelplay"]
 STREAM_COMMAND : ["stream", "cstream", "streamforce"]
