@@ -20,7 +20,6 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS, lyrical
 from strings import get_command
-from strings.filters import command
 from AlexaMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
 from AlexaMusic.core.call import Alexa
 from AlexaMusic.utils import seconds_to_min, time_to_seconds
@@ -43,12 +42,8 @@ from AlexaMusic.utils.database import is_served_user
 # Command
 PLAY_COMMAND = get_command("PLAY_COMMAND")
 
-
 @app.on_message(
-    command(PLAY_COMMAND)
-    & filters.group
-    & ~filters.edited
-    & ~BANNED_USERS
+    filters.command(PLAY_COMMAND) & filters.group & ~filters.edited & ~BANNED_USERS
 )
 @PlayWrapper
 async def play_commnd(
