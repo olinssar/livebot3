@@ -13,6 +13,7 @@ from youtubesearchpython.__future__ import VideosSearch
 import config
 from config import BANNED_USERS
 from config.config import OWNER_ID
+from config.config import SUPPORT_CHANNEL
 from strings import get_command, get_string
 from AlexaMusic import Telegram, YouTube, app
 from AlexaMusic.misc import SUDOERS
