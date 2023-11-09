@@ -18,7 +18,7 @@ from pyrogram.types import (
     Message,
 )
 
-from config import BANNED_USERS, CLEANMODE_DELETE_MINS, MUSIC_BOT_NAME, OWNER_ID
+from config import BANNED_USERS, CLEANMODE_DELETE_MINS, MUSIC_BOT_NAME, OWNER_ID, SUPPORT_CHANNEL
 from strings import get_command
 from AlexaMusic import app
 from AlexaMusic.utils.database import (
